@@ -39,6 +39,7 @@ namespace StudentAdminPortalAPI
                 });
             });
             services.AddControllers();
+
             services.AddDbContext<StudentAdminContext>(options => 
                  options.UseSqlServer(Configuration.GetConnectionString("StudentAdminPortalDb")));
 
